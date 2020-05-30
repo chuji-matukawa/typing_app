@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>typinggame</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div id="actionBar" class="default">
+				<h1 id="applicationTitle">タイピング練習</h1>
+
+        <div id="timer">25</div>
+
+				<div id="actionContent">
+					<button id="exitButton">終了する</button>
+				</div>
+		</div>
+
+    <div class="score-modal-wrapper" id="score-modal">
+    <div class="modal">
+      <div id="modal-contents">
+        <h2>成績表</h2>
+        <table align="center">
+          <tbody>
+            <tr>
+              <th>得点</th>
+              <td id="score"></td>
+              <td>点</td>
+            </tr>
+            <tr>
+              <th>入力文字数</th>
+              <td id="count"></td>
+              <td>字</td>
+            </tr>
+            <tr>
+              <th>誤字</th>
+              <td id="miss"></td>
+              <td>字</td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="restart">もう一度</button>
+      </div>
+    </div>
+    </div>
+
+    <div id="view">
+      <div id="inputed">
+        <div id="inputed-label">入力文字数</div>
+        <div id="inputed-count">0</div>
+      </div>
+      <p id="text"></p>
+    </div>
+    <a href="" id="start" class="inactive">スタート</a>
+    <script src="app.js"></script>
+  </body>
+</html>
